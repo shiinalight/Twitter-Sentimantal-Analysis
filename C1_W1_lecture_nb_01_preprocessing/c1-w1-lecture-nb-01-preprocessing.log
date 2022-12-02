@@ -1,0 +1,61 @@
+13.8s 1 /kaggle/input/positive-tweetsjson/positive_tweets.json
+13.8s 2 /kaggle/input/negative-tweetsjson/negative_tweets.json
+13.8s 3 /opt/conda/lib/python3.7/site-packages/papermill/iorw.py:50: FutureWarning: pyarrow.HadoopFileSystem is deprecated as of 2.0.0, please use pyarrow.fs.HadoopFileSystem instead.
+13.8s 4 from pyarrow import HadoopFileSystem
+15.9s 5 [nltk_data] Downloading package twitter_samples to
+15.9s 6 [nltk_data]     /usr/share/nltk_data...
+15.9s 7 [nltk_data]   Package twitter_samples is already up-to-date!
+16.9s 8 Number of positive tweets:  5000
+16.9s 9 Number of negative tweets:  5000
+16.9s 10 
+16.9s 11 The type of all_positive_tweets is:  <class 'list'>
+16.9s 12 The type of a tweet entry is:  <class 'str'>
+17.2s 13 [92m@photopitchicks do u have instagram? So that I can tag you :)
+17.2s 14 [91mI want to watch a movie, listen to Sizwe, eat and write my assignments at the same time.... But I can't do that :(
+17.3s 15 My beautiful sunflowers on a sunny Friday morning off :) #sunflowers #favourites #happy #Friday off… https://t.co/3tfYom0N1i
+17.3s 16 [nltk_data] Downloading package stopwords to /usr/share/nltk_data...
+17.3s 17 [nltk_data]   Package stopwords is already up-to-date!
+17.5s 18 [92mMy beautiful sunflowers on a sunny Friday morning off :) #sunflowers #favourites #happy #Friday off… https://t.co/3tfYom0N1i
+17.5s 19 [94m
+17.5s 20 My beautiful sunflowers on a sunny Friday morning off :) sunflowers favourites happy Friday off…
+17.6s 21 
+17.6s 22 [92mMy beautiful sunflowers on a sunny Friday morning off :) sunflowers favourites happy Friday off…
+17.6s 23 [94m
+17.6s 24 
+17.6s 25 Tokenized string:
+17.6s 26 ['my', 'beautiful', 'sunflowers', 'on', 'a', 'sunny', 'friday', 'morning', 'off', ':)', 'sunflowers', 'favourites', 'happy', 'friday', 'off', '…']
+17.7s 27 Stop words
+17.7s 28 
+17.7s 29 ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that', "that'll", 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', "don't", 'should', "should've", 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', "aren't", 'couldn', "couldn't", 'didn', "didn't", 'doesn', "doesn't", 'hadn', "hadn't", 'hasn', "hasn't", 'haven', "haven't", 'isn', "isn't", 'ma', 'mightn', "mightn't", 'mustn', "mustn't", 'needn', "needn't", 'shan', "shan't", 'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't"]
+17.7s 30 
+17.7s 31 Punctuation
+17.7s 32 
+17.7s 33 !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+17.7s 34 
+17.7s 35 [92m
+17.7s 36 ['my', 'beautiful', 'sunflowers', 'on', 'a', 'sunny', 'friday', 'morning', 'off', ':)', 'sunflowers', 'favourites', 'happy', 'friday', 'off', '…']
+17.7s 37 [94m
+17.7s 38 removed stop words and punctuation:
+17.7s 39 ['beautiful', 'sunflowers', 'sunny', 'friday', 'morning', ':)', 'sunflowers', 'favourites', 'happy', 'friday', '…']
+17.8s 40 
+17.8s 41 [92m
+17.8s 42 ['beautiful', 'sunflowers', 'sunny', 'friday', 'morning', ':)', 'sunflowers', 'favourites', 'happy', 'friday', '…']
+17.8s 43 [94m
+17.8s 44 stemmed words:
+17.8s 45 ['beauti', 'sunflow', 'sunni', 'friday', 'morn', ':)', 'sunflow', 'favourit', 'happi', 'friday', '…']
+18.0s 46 
+18.0s 47 [92m
+18.0s 48 My beautiful sunflowers on a sunny Friday morning off :) #sunflowers #favourites #happy #Friday off… https://t.co/3tfYom0N1i
+18.0s 49 [94m
+18.0s 50 preprocessed tweet:
+18.0s 51 ['beauti', 'sunflow', 'sunni', 'friday', 'morn', ':)', 'sunflow', 'favourit', 'happi', 'friday', '…']
+21.6s 52 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2567: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+21.6s 53 FutureWarning,
+21.6s 54 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+21.9s 55 [NbConvertApp] Writing 44678 bytes to __notebook__.ipynb
+24.3s 56 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2567: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+24.3s 57 FutureWarning,
+24.3s 58 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+25.1s 59 [NbConvertApp] Support files will be in __results___files/
+25.1s 60 [NbConvertApp] Making directory __results___files
+25.1s 61 [NbConvertApp] Writing 314112 bytes to __results__.html
